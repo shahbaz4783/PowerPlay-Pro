@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    width: 20vw;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    margin: 20px auto;
+    height: 40vh;
+    padding: 20px;
+    background-color: #4ab784;
+    border-radius: 250px;
+    border: 10px solid powderblue;
+
+}
+
+
+#scorecard {
+    width: 35%;
+    text-align: left;
+    background-color: rgb(41, 133, 145);
+    padding: 20px;
+    font-size: 1.5em;
+    margin: 6px auto;
+    border-radius: 30px;
+}
+
+
+.require {
+    width: 35%;
+    text-align: left;
+    background-color: rgb(41, 133, 145);
+    padding: 20px;
+    font-size: 1.2em;
+    margin: 6px auto;
+    border-radius: 30px;
+
+}
+
+.ctrl-container {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin: 10px auto;
+    height: 20vh;
+    background-color: #57aec2;
+    border-radius: 20px;
+    border: 10px solid #BA8C63;
+    text-align: center;
+}
+
+
+.shorts{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    list-style: none;
+    padding: 20px;
+}
+
+.ctrl {
+    padding: 15px;
+    margin: 20px auto;
+    width: 30%;
+    background-color: rgb(8, 154, 37);
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.ctrl:hover{
+    background-color: goldenrod;
+    transition: all 0.3s ease-in-out;
+    color: black;
+    transform: scale(1.05);
+}
+
+.inning-message{
+    margin: 0 auto;
+    margin-top: 15px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.7em;
+    color: rgb(255, 238, 0);
+    text-align: center;
+}
+
+#show-runs{
+    margin: auto;
+    width: 50vw;
+    height: 20vh;
+    background-color: pink;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+#last-shot{
+    width: 30%;
+    background-color: rgb(15, 144, 144);
+    height: 90%;
+    margin: auto;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 100px;
+}
+
+#over{
+    width: 55%;
+    height: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.runs-data{
+    background-color: skyblue;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.run-4 {
+    background-color: blue;
+}
+
+.run-6 {
+    background-color: violet;
+}
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerPlay Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/faviconLogo.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1 class="title">Powerplay Pro</h1>
+    <div id="game-container">
+        <div id="scorecard">
+            <p>AI Score: <span id="computer-score"></span></p>
+            <br>
+            <p class="your-score">Your Score: <span id="user-score"></span></p>
+            <br>
+            <p>Balls: <span id="balls-played"></span></p>            
+        </div>
+        <div class="require">
+            <p class="tar">Target: <span id="target"></span></p>
+            <br>
+            <p class="runs-need">Runs Required: <span id="required-runs"></span></p>
+            <br>
+            <p class="rem-ball">Balls Left: <span id="balls-left"></span></p>
+            <br>
+            <p class="cr">Current RR: <span id="crr"></span></p>
+            <br>
+            <p class="rr">Require RR: <span id="rrr"></span></p>
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+    <div id="show-runs">
+        <div id="last-shot"></div>
+        <div id="over">
+            <div class="runs-data"></div>
+            <div class="runs-data"></div>
+            <div class="runs-data"></div>
+            <div class="runs-data"></div>
+            <div class="runs-data"></div>
+            <div class="runs-data"></div>
+            <div class="runs-data"></div>
+            <div class="runs-data"></div>
+            <div class="runs-data"></div>
+            <div class="runs-data"></div>
+            <div class="runs-data"></div>
+            <div class="runs-data"></div>
+        </div>
+    </div>
+
+    <div class="ctrl-container">
+        <p class="inning-message"></p>
+        <div class="shorts">
+                <li id="bowling" class="ctrl">Bowling</li>
+                <li id="batting" class="ctrl">Batting</li>
+                <li id="okay" class="ctrl">OKAY</li>
+                <li id="play-again" class="ctrl">Play Again</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
