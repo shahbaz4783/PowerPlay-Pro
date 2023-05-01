@@ -98,7 +98,7 @@ $(function () {
 
             } else if (userScore < computerScore && userBallsPlayed >= 12) {
                 $(".inning-message").show();
-                $(".inning-message").text("You Lost Match");
+                $(".inning-message").text("You Lost by " + (computerScore - userScore) + " " + ((computerScore - userScore) === 1 ? "Run" : "Runs"));
                 $("#batting").hide();
                 $("#play-again").show();
 
