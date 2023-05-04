@@ -1,0 +1,129 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 50px;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    perspective: 1000px;
+}
+
+.toss-container h1 {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.choose{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.option{
+    width: 180px;
+    height: 50px;
+    margin: 30px;
+    cursor: pointer;
+    border: 2px solid green;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 1.6em;
+    background-color: #21D4FD;
+
+}
+
+.option:hover{
+    background-color: transparent;
+    transition: all 0.3s ease-in;
+    color: white;
+}
+
+
+
+#coin {
+    position: relative;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border: 5px solid pink;
+    border-radius: 50%;
+}
+
+
+.coinEl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+}
+
+#coin div {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.side-a {
+    z-index: 100;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.side-b {
+    transform: rotateY(-180deg);
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+
+#coin {
+    transition: transform 1s ease-in;
+    transform-style: preserve-3d;
+}
+
+#coin div {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.result{
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+#coin.heads {
+    animation: flipHeads 3s ease-out forwards;
+}
+
+#coin.tails {
+    animation: flipTails 3s ease-out forwards;
+}
+
+
+@keyframes flipHeads {
+    from {
+        transform: rotateY(0);
+    }
+
+    to {
+        transform: rotateY(1800deg);
+    }
+}
+
+@keyframes flipTails {
+    from {
+        transform: rotateY(0);
+    }
+
+    to {
+        transform: rotateY(1980deg);
+    }
+}
