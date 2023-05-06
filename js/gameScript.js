@@ -2,7 +2,9 @@
 let batBtnHide = $("#batting, #batting-agg").hide();
 let midInningBtnHide = $("#okay").hide();
 let playAgainHide = $("#play-again").hide();
+let ballLeftHide = $(".rem-ball").hide();
 let secondInningBtnHide = $(".rr, .tar, .runs-need, .your-score").hide();
+
 
 
 
@@ -45,8 +47,6 @@ $(function () {
             aiBallsPlayed++;
             $("#balls-played").text(aiBallsPlayed + userBallsPlayed + " (12)");
             $(".runs-data:eq(" + (aiBallsPlayed - 1) + ")").text(randomRuns);
-            $("#balls-left").text(12 - aiBallsPlayed);
-
         }
 
         if (aiBallsPlayed >= 12) {
@@ -133,6 +133,7 @@ $("#okay").on("click", function () {
     $(".runs-need").show();
     $(".your-score").show();
     $("#crr").text("")
+    $(".rem-ball").show();
 })
 
 

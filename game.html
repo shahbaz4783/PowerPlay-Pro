@@ -14,24 +14,25 @@
     <h1 class="title">Powerplay Pro</h1>
     <div id="game-container">
         <div id="scorecard">
-            <p>Computer Score: <span id="computer-score"></span></p>
-            <br>
+            <p>Computer: <span id="computer-score"></span></p>
             <p class="your-score">Your Score: <span id="user-score"></span></p>
-            <br>
-            <p>Balls: <span id="balls-played"></span></p>            
-        </div>
-        <div class="require">
-            <p class="tar">Target: <span id="target"></span></p>
-            <br>
-            <p class="runs-need">Runs Required: <span id="required-runs"></span></p>
-            <br>
-            <p class="rem-ball">Balls Left: <span id="balls-left"></span></p>
-            <br>
-            <p class="cr">Current RR: <span id="crr"></span></p>
-            <br>
-            <p class="rr">Require RR: <span id="rrr"></span></p>
+            <p>Balls: <span id="balls-played"></span></p>
         </div>
 
+        <div class="require">
+            <p class="tar">Target: <span id="target"></span></p>
+
+            <div class="run-ball-req">
+                <p class="cr req-cells">Current RR <span id="crr" class="numbers"></span></p>
+                <p class="rr req-cells">Require RR <span id="rrr" class="numbers"></span></p>
+            </div>
+
+            <div class="run-ball-req">
+                <p class="runs-need req-cells">You Need <span id="required-runs" class="numbers"></span></p>
+                <p class="rem-ball req-cells">Balls Left <span id="balls-left" class="numbers"></span></p>
+            </div>
+
+        </div>
     </div>
     </div>
     </div>
@@ -57,12 +58,12 @@
     <div class="ctrl-container">
         <p class="inning-message"></p>
         <div class="shorts">
-                <li id="bowling" class="ctrl">Bowling</li>
-                <li id="bowling-agg" class="ctrl">Agressive Bowling</li>
-                <li id="batting" class="ctrl">Batting</li>
-                <li id="batting-agg" class="ctrl">Agressive Batting</li>
-                <li id="okay" class="ctrl">Lets Chase It!</li>
-                <li id="play-again" class="ctrl">Play Again</li>
+            <li id="bowling" class="ctrl">Bowling</li>
+            <li id="bowling-agg" class="ctrl">Agressive Bowling</li>
+            <li id="batting" class="ctrl">Batting</li>
+            <li id="batting-agg" class="ctrl">Agressive Batting</li>
+            <li id="okay" class="ctrl">Lets Chase It!</li>
+            <li id="play-again" class="ctrl">Play Again</li>
             </ul>
         </div>
     </div>
