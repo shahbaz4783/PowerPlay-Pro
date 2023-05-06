@@ -30,14 +30,13 @@ body {
 .option{
     width: 180px;
     height: 50px;
-    margin: 30px;
+    margin: auto;
     cursor: pointer;
     border: 2px solid green;
     background-color: white;
     border-radius: 15px;
     font-size: 1.6em;
     background-color: #21D4FD;
-
 }
 
 .option:hover{
@@ -91,11 +90,14 @@ body {
     backface-visibility: hidden;
 }
 
+
 .result{
     width: 50vw;
     margin: auto;
     text-align: center;
     margin-top: 60px;
+    color: greenyellow;
+    font-size: 1.3em;
 }
 
 
