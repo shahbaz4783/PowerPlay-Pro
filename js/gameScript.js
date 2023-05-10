@@ -1,5 +1,5 @@
 // Hide Buttons
-let batBtnHide = $("#batting, #batting-agg").hide();
+let batBtnHide = $("#batting").hide();
 let midInningBtnHide = $("#okay").hide();
 let playAgainHide = $("#play-again").hide();
 let ballLeftHide = $(".rem-ball").hide();
@@ -54,7 +54,6 @@ $(function () {
 
         if (aiBallsPlayed >= 12) {
             $("#bowling").hide();
-            $("#bowling-agg").hide();
             $("#okay").show();
             $("#target").text(computerScore + 1);
             $("#required-runs").text(computerScore + 1);
@@ -99,7 +98,6 @@ $(function () {
                 $(".inning-message").show();
                 $(".inning-message").text("You Won the Match!");
                 $("#batting").hide();
-                $("#batting-agg").hide();
                 $("#play-again").show();
                 $("#required-runs").text(0);
                 $("#rrr").text(0)
@@ -109,14 +107,12 @@ $(function () {
                 $(".inning-message").show();
                 $(".inning-message").text("You Lost by " + (computerScore - userScore) + " " + ((computerScore - userScore) === 1 ? "Run" : "Runs"));
                 $("#batting").hide();
-                $("#batting-agg").hide();
                 $("#play-again").show();
 
             } else if (userScore === computerScore && userBallsPlayed >= 12) {
                 $(".inning-message").show();
                 $(".inning-message").text("Match Tied!");
                 $("#batting").hide();
-                $("#batting-agg").hide();
                 $("#play-again").show();
             }
 
@@ -135,7 +131,6 @@ $("#okay").on("click", function () {
     $("#balls-left").text(12);
     $("#over .runs-data").text('');
     $("#batting").show();
-    $("#batting-agg").show();
     $("#okay").hide();
     $(".inning-message").hide();
     $(".runs-data").removeClass("run-4 run-6");

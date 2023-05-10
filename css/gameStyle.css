@@ -26,9 +26,7 @@ body{
     background-color: #4ab784;
     border-radius: 250px;
     border: 10px solid powderblue;
-
 }
-
 
 #scorecard {
     width: 35%;
@@ -38,7 +36,6 @@ body{
     font-size: 1.5em;
     margin: 6px auto;
     border-radius: 30px;
-        
 }
 
 .data{
@@ -66,7 +63,6 @@ body{
     text-align: center;
 }
 
-
 .run-ball-req{
     display: flex;
     width: 100%;
@@ -88,7 +84,6 @@ body{
     margin: 10px auto;
 }
 
-
 .ctrl-container {
     display: flex;
     flex-direction: column;
@@ -101,11 +96,13 @@ body{
     text-align: center;
 }
 
+.bat-bowl{
+    width: 100px;
+    height: 100px;
+    margin: -30px;
+}
 
 .shorts{
-    text-align: center;
-    padding: 20px;
-    display: flex;
     list-style: none;
     padding: 20px;
 }
@@ -114,13 +111,13 @@ body{
     padding: 15px;
     margin: 10px auto;
     width: 30%;
-    background-color: rgb(8, 154, 37);
     cursor: pointer;
     border-radius: 30px;
+    border: 2px solid palevioletred;
 }
 
 .ctrl:hover{
-    background-color: goldenrod;
+    /* background-color: goldenrod; */
     transition: all 0.3s ease-in-out;
     color: black;
     transform: scale(1.05);
@@ -154,6 +151,10 @@ body{
     border-radius: 50px;
     text-align: center;
     font-size: 100px;
+}
+
+#batting, #bowling{
+    border: none;
 }
 
 #over{

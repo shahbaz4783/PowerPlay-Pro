@@ -11,7 +11,7 @@
 #game-container{
     width: 95vw;
     border-radius: 20px;
-    height: 40vh;
+    height: 35vh;
     padding: 0;
     border: 5px solid palevioletred;
 }
@@ -32,23 +32,29 @@
 
 .ctrl{
     padding: 6px;
-    margin: 0 auto;
+    margin: -20px auto;
     width: 120px;
     height: 5vh;
+}
 
+.bat-bowl{
+    width: 50px;
+    height: 50px;
 }
 
 .shorts{
-    background-color: rgb(82, 198, 117);
+    background-color: rgb(46, 206, 238);
     position: fixed;
     bottom: 0;
     width: 100vw;
     height: 8vh;
+    left: 0;
 }
 
 .ctrl-container{
     height: 15vh;
     border: 3px solid palevioletred;
+    width: 95vw;
 }
 
 .runs-data{
