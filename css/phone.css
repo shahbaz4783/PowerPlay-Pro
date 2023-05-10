@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    color: pink;
+    width: fit-content;
+}
+
+#game-container{
+    width: 95vw;
+    border-radius: 20px;
+    height: 40vh;
+    padding: 0;
+    border: 5px solid palevioletred;
+}
+
+#scorecard, .require{
+    width: 48%;
+    font-size: 1.02em;
+}
+
+#show-runs{
+    width: 95vw;
+    height: 22vh;
+}
+
+.ctrl-container{
+    width: 100vw;
+}
+
+.ctrl{
+    padding: 6px;
+    margin: 0 auto;
+    width: 120px;
+    height: 5vh;
+
+}
+
+.shorts{
+    background-color: rgb(82, 198, 117);
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 8vh;
+}
+
+.ctrl-container{
+    height: 15vh;
+    border: 3px solid palevioletred;
+}
+
+.runs-data{
+    border-radius: 50%;
+}

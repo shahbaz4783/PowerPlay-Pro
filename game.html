@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PowerPlay Pro</title>
     <link rel="stylesheet" href="css/gameStyle.css">
+    <link rel="stylesheet" media="screen and (max-width: 877px)" href="/css/phone.css">
     <link rel="shortcut icon" href="assets/faviconLogo.png" type="image/x-icon">
 </head>
 
@@ -14,9 +15,9 @@
     <h1 class="title">Powerplay Pro</h1>
     <div id="game-container">
         <div id="scorecard">
-            <p>Computer: <span id="computer-score"></span></p>
-            <p class="your-score">Your Score: <span id="user-score"></span></p>
-            <p>Balls: <span id="balls-played"></span></p>
+            <p class="data">Computer: <span id="computer-score" class="numbers"></span></p>
+            <p class="your-score data">Your Score: <span id="user-score" class="numbers"></span></p>
+            <p class="data">Balls: <span id="balls-played" class="numbers"></span></p>
         </div>
 
         <div class="require">
@@ -25,6 +26,10 @@
             <div class="run-ball-req">
                 <p class="cr req-cells">Current RR <span id="crr" class="numbers"></span></p>
                 <p class="rr req-cells">Require RR <span id="rrr" class="numbers"></span></p>
+            </div>
+
+            <div class="projected-score">
+                <p>Projected Score <span id="pr" class="numbers"></span></p>
             </div>
 
             <div class="run-ball-req">
@@ -59,9 +64,9 @@
         <p class="inning-message"></p>
         <div class="shorts">
             <li id="bowling" class="ctrl">Bowling</li>
-            <li id="bowling-agg" class="ctrl">Agressive Bowling</li>
+            <!-- <li id="bowling-agg" class="ctrl">Agressive Bowling</li> -->
             <li id="batting" class="ctrl">Batting</li>
-            <li id="batting-agg" class="ctrl">Agressive Batting</li>
+            <!-- <li id="batting-agg" class="ctrl">Agressive Batting</li> -->
             <li id="okay" class="ctrl">Lets Chase It!</li>
             <li id="play-again" class="ctrl">Play Again</li>
             </ul>

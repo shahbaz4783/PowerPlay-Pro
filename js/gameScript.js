@@ -4,6 +4,7 @@ let midInningBtnHide = $("#okay").hide();
 let playAgainHide = $("#play-again").hide();
 let ballLeftHide = $(".rem-ball").hide();
 let secondInningBtnHide = $(".rr, .tar, .runs-need, .your-score").hide();
+$(".projected-score").hide();
 
 
 
@@ -47,6 +48,8 @@ $(function () {
             aiBallsPlayed++;
             $("#balls-played").text(aiBallsPlayed + userBallsPlayed + " (12)");
             $(".runs-data:eq(" + (aiBallsPlayed - 1) + ")").text(randomRuns);
+
+
         }
 
         if (aiBallsPlayed >= 12) {
@@ -57,7 +60,11 @@ $(function () {
             $("#required-runs").text(computerScore + 1);
             $(".inning-message").text("You Need " + (computerScore + 1) + " Runs to Win the Match" + " in 12 Balls");
         }
+
+        $(".projected-score").show();
         $("#crr").text((computerScore/aiBallsPlayed*6).toFixed(2));
+        $("#pr").text(Math.round(computerScore/aiBallsPlayed*12));
+
     });
 
     // Batting Function
@@ -94,6 +101,9 @@ $(function () {
                 $("#batting").hide();
                 $("#batting-agg").hide();
                 $("#play-again").show();
+                $("#required-runs").text(0);
+                $("#rrr").text(0)
+
 
             } else if (userScore < computerScore && userBallsPlayed >= 12) {
                 $(".inning-message").show();
@@ -109,6 +119,7 @@ $(function () {
                 $("#batting-agg").hide();
                 $("#play-again").show();
             }
+
         }
     });
 });
@@ -134,6 +145,7 @@ $("#okay").on("click", function () {
     $(".your-score").show();
     $("#crr").text("")
     $(".rem-ball").show();
+    $(".projected-score").hide();
 })
 
 
